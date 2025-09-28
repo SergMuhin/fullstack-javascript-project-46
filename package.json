@@ -1,5 +1,5 @@
 {
-  "name": "gendiff",
+  "name": "@hexlet/code",
   "version": "0.0.2",
   "description": "A utility for comparing configuration files and showing differences. Supports JSON and YAML formats with multiple output styles.",
   "main": "src/index.js",
