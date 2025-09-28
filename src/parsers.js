@@ -1,4 +1,4 @@
-import yaml from 'js-yaml';
+import yaml from 'js-yaml'
 
 // Здесь ничего кроме данных и их типа. Парсер парсит данные, а не файлы.
 // Никакого намека на файловую систему, чтение файлов и расширения.
@@ -7,8 +7,8 @@ const parsers = {
   json: JSON.parse,
   yaml: yaml.load,
   yml: yaml.load,
-};
+}
 
 // Наружу надо выставлять функции, а не структуры данных (formatters)
 // На вход идет тип данных и сами данные. Ничего про файлы!
-export default (data, format) => parsers[format](data);
+export default (data, format) => parsers[format](data)

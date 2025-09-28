@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-import { program } from 'commander';
+import { program } from 'commander'
 
 // https://ru.hexlet.io/blog/posts/skripty-moduli-i-biblioteki
 // Импорт ровно одной функции правильной сигнатуры. Все остальное – кишки библиотеки
-import genDiff from '../src/index.js';
+import genDiff from '../src/index.js'
 
 program
   .version('0.0.1')
@@ -14,6 +14,6 @@ program
   .action((path1, path2) => {
     // Код вызова внутри action
     // Вывод на экран происходит здесь, а не внутри библиотеки
-    console.log(genDiff(path1, path2, program.opts().format));
+    console.log(genDiff(path1, path2, program.opts().format))
   })
-  .parse(process.argv);
+  .parse(process.argv)
